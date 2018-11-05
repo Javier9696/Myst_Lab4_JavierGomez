@@ -40,7 +40,7 @@ OA_Da <- 17
 # Uso horario
 OA_Ta <- "America/Mexico_City"
 # Instrumento
-OA_In <- "EUR_USD"
+OA_In <- "USD_MXN"
 # Granularidad o periodicidad de los precios H4 = Cada 4 horas
 # S5, S10, S30, M1, M5, M15, M30, H1, H4, H8, D, M
 OA_Pr <- "M1"
@@ -110,8 +110,8 @@ for(j in 1:34) {#for rows
   
   
 }# fin 
-
-data <- list()
+Precioss <- list()
+datos <- list()
 Calendario$DateTime <- as.character(Calendario$DateTime)
 Calendario$DateTime <- as.POSIXct(Calendario$DateTime, format = "%m/%d/%Y %H:%M")
 e0<- "2016-01-08 13:30:00"
@@ -122,11 +122,11 @@ Precios_Oanda <- HisPrices(AccountType = OA_At, Granularity = OA_Pr,
                            DayAlign = OA_Da, TimeAlign = OA_Ta, Token = OA_Ak,
                            Instrument = OA_In, 
                            Start = e2, End = e3, Count = NULL)
-ind <- which(Precios_Oanda$TimeStamp == e0)
+indn <- which(Precios_Oanda$TimeStamp == e0)
 Precios <- Precios_Oanda[(ind-15):(ind+15),]
-indn <- 0
+ind <- 0
 for (i in 1:34){
-  fechan <- Calendario$DateTime[23]
+  fechan <- Calendario$DateTime[i]
   fechan1 <- substr(fechan,1,10)
   fechan2 <- as.Date(fechan1)
   if(wday(fechan2) != 1){
@@ -141,8 +141,10 @@ for (i in 1:34){
                                Instrument = OA_In, 
                                Start = fechan2-2, End = fechan2+1, Count = NULL)
   }
-  ind <- which(Precios_Oanda$TimeStamp == Calendario$DateTime[i])
-  indn[i] <- ind
-  Precios[[i]] <- Precios_Oanda[(indn[i]-15):(indn[i]+15),]
-  
+  Precioss[[i]]<-Precios_Oanda
+  ind<- which(Precios_Oanda$TimeStamp == Calendario$DateTime[i])
+  datos[i] <- list("Precios" = Precios_Oanda[(ind-15):(ind+15),])
+  datos[[i]][,8]<-("Clasificación" = Calendario1$Clasificacion[i])
 }
+#Se tuvo que cambiar a USDMXN porque en un punto del tiempo, no existián los precios
+#y ONDA no los descargaba, dejando el reemplazo en 0. Por lo tanto cambié a USDMXN
