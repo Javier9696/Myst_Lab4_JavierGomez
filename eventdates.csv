@@ -1,0 +1,51 @@
+DateTime,Name,Country,Volatility,Actual,Previous,Consensus
+01/08/2016 13:30,Nonfarm Payrolls,United States,3,292,211,200
+02/05/2016 13:30,Nonfarm Payrolls,United States,3,151,292,190
+03/04/2016 13:30,Nonfarm Payrolls,United States,3,242,151,190
+04/01/2016 12:30,Nonfarm Payrolls,United States,3,215,242,205
+05/06/2016 12:30,Nonfarm Payrolls,United States,3,160,215,200
+06/03/2016 12:30,Nonfarm Payrolls,United States,3,38,160,164
+07/08/2016 12:30,Nonfarm Payrolls,United States,3,287,38,175
+08/05/2016 12:30,Nonfarm Payrolls,United States,3,255,287,180
+09/02/2016 12:30,Nonfarm Payrolls,United States,3,151,255,180
+10/07/2016 12:30,Nonfarm Payrolls,United States,3,156,151,175
+11/04/2016 12:30,Nonfarm Payrolls,United States,3,161,156,175
+12/02/2016 13:30,Nonfarm Payrolls,United States,3,178,161,175
+01/06/2017 13:30,Nonfarm Payrolls,United States,3,156,178,178
+02/03/2017 13:30,Nonfarm Payrolls,United States,3,227,156,175
+03/10/2017 13:30,Nonfarm Payrolls,United States,3,235,227,190
+04/07/2017 12:30,Nonfarm Payrolls,United States,3,98,235,180
+05/05/2017 12:30,Nonfarm Payrolls,United States,3,211,98,185
+06/02/2017 12:30,Nonfarm Payrolls,United States,3,138,211,185
+07/07/2017 12:30,Nonfarm Payrolls,United States,3,222,138,179
+08/04/2017 12:30,Nonfarm Payrolls,United States,3,209,222,183
+09/01/2017 12:30,Nonfarm Payrolls,United States,3,156,209,180
+10/06/2017 12:30,Nonfarm Payrolls,United States,3,-33,156,90
+11/03/2017 12:30,Nonfarm Payrolls,United States,3,261,-33,310
+12/08/2017 13:30,Nonfarm Payrolls,United States,3,228,261,200
+01/05/2018 13:30,Nonfarm Payrolls,United States,3,148,228,190
+02/02/2018 13:30,Nonfarm Payrolls,United States,3,200,148,180
+03/09/2018 13:30,Nonfarm Payrolls,United States,3,313,200,200
+04/06/2018 12:30,Nonfarm Payrolls,United States,3,103,313,193
+05/04/2018 12:30,Nonfarm Payrolls,United States,3,164,103,192
+06/01/2018 12:30,Nonfarm Payrolls,United States,3,223,164,188
+07/06/2018 12:30,Nonfarm Payrolls,United States,3,213,223,195
+08/03/2018 12:30,Nonfarm Payrolls,United States,3,157,213,190
+09/07/2018 12:30,Nonfarm Payrolls,United States,3,201,157,191
+10/05/2018 12:30,Nonfarm Payrolls,United States,3,134,201,185
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
